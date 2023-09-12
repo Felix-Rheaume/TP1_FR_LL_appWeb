@@ -2,7 +2,14 @@
   background-color: #22232b;
   display: flex;
   padding: 10px;
-  color: rgb(34, 35, 43);
+  list-style: none;
+}
+
+.navLink {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: darkgray;
+  list-style: none;
 }
 
 .navItem:hover{
@@ -12,4 +19,12 @@
 .active {
   background-color: #fff;
   color: #22232b;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
 }
