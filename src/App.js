@@ -1,4 +1,12 @@
 import './App.css';
+import Navbar from './Components/Navbar';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import Accueil from './Components/Accueil';
+import Carousel from './Components/Carousel';
+import Tableau from './Components/Tableau';
+import Calendrier from './Components/Calendrier';
+import Convertisseur from './Components/Convertisseur';
+import Crypto from './Components/Crypto';
 
 function App() {
   return (
