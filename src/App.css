@@ -33,3 +33,14 @@
 div {
   display: block;
 }
+
+/*Carousel*/
+.carouselImages {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-height: 270px;
+  max-width: 100%;
+  object-fit: contain;
+}
+/*Carousel*/
