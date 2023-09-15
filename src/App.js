@@ -7,6 +7,8 @@ import Tableau from './Components/Tableau';
 import Calendrier from './Components/Calendrier';
 import Convertisseur from './Components/Convertisseur';
 import Crypto from './Components/Crypto';
+import Fibonnaci from './Components/Fibonnaci';
+import FibonnaciWebWorker from './Components/FibonnaciWebWorker';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route exact path="/calendrier" element={<Calendrier/>}></Route>
         <Route exact path="/convertisseur" element={<Convertisseur/>}></Route>
         <Route exact path="/crypto" element={<Crypto/>}></Route>
+        <Route exact path="/fibonnaci1t" element={<Fibonnaci/>}></Route>
+        <Route exact path="/fibonnaci2t" element={<FibonnaciWebWorker/>}></Route>
       </Routes>
     </BrowserRouter>
   );

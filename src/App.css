@@ -2,7 +2,12 @@
   background-color: #22232b;
   display: flex;
   padding: 10px;
-  list-style: none;
+  list-style-type: none;
+}
+
+.navLinks ul{
+  list-style-type: none;
+  display: flex;
 }
 
 .navLink {

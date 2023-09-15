@@ -1,5 +1,5 @@
 import React from "react";
-import React_Carousel from 'react-bootstrap/Carousel';
+//import React_Carousel from 'react-bootstrap/Carousel';
 //import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
 class Carousel extends React.Component{
