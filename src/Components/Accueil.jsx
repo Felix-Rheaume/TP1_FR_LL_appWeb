@@ -9,7 +9,7 @@ class Accueil extends React.Component{
         return(
         <Container>
             <Row className="justify-content-md-center">
-                <Col md="auto">
+                <Col className="col-lg-10 col">
                     <h1>Accueil</h1>
                     <p>Bienvenue dans votre TP1 !!!</p>
                 </Col>
