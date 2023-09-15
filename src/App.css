@@ -34,3 +34,16 @@
 div {
   display: block;
 }
+
+table, th, td{
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+th{
+  font-weight: normal;
+}
+
+table{
+  width: 100%;
+}
