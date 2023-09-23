@@ -6,5 +6,7 @@ function calculerFibonacci(nombre){
 }
 
 self.addEventListener('message', (message) =>{
-  console.log(message.data)
+  if(typeof(message.data) == "number"){
+    self.postMessage(calculerFibonacci(message.data))
+  }
 })

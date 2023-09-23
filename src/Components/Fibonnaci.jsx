@@ -12,7 +12,7 @@ class Fibonnaci extends React.Component {
 
     handleChangedValue = (e) => {
         this.setState(() => ({
-            valeurACalculer: parseInt(e.target.value),
+            valeurACalculer: !isNaN(parseInt(e.target.value)) ? parseInt(e.target.value) : 0
         }));
     }
 

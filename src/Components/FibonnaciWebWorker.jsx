@@ -14,16 +14,16 @@ class FibonnaciWebWorker extends React.Component{
 
     handleChangedValue = (e) => {
         this.setState(() => ({
-            valeurACalculer: parseInt(e.target.value),
+            valeurACalculer: !isNaN(parseInt(e.target.value)) ? parseInt(e.target.value) : 0
         }));
     }
 
     handleCalculer = (e) => {
-        webWorker.postMessage('allo')
-
-        /*this.setState(() => ({
-            resultat: this.calculerFibonacci(this.state.valeurACalculer)
-        }));*/
+        webWorker.postMessage(this.state.valeurACalculer)
+        
+        webWorker.onmessage = (e) => {
+            this.setState({ resultat: e.data });
+        }
     }
 
     render(){
