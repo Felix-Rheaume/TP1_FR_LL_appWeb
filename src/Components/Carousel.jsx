@@ -11,7 +11,7 @@ class Carousel extends React.Component {
                     <Col className="col-lg-10 col">
 
                         <h1>Carousel</h1>
-                        <ReactCarousel>
+                        <ReactCarousel interval={2000} >
                             <ReactCarousel.Item>
                                 <CarouselImage imageIndex={0} />
                             </ReactCarousel.Item>
