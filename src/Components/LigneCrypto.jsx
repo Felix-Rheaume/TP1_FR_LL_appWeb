@@ -7,7 +7,7 @@ class LigneCrypto extends React.Component{
     render(){
         return(
             <>
-            <th>
+                <th>
                     {this.props.nom}
                 </th>
                 <th>
@@ -20,7 +20,7 @@ class LigneCrypto extends React.Component{
                     {parseFloat(Number(this.props.total).toFixed(2))} $
                 </th>
                 <th>
-                    <button className="btn btn-primary">Modifier</button>
+                    <button className="btn btn-primary" onClick={() => this.props.fonctionModif(this.props.id)}>Modifier</button>
                 </th>
             </>
         )

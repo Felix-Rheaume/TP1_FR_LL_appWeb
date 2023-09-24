@@ -22,18 +22,22 @@ class Tableau extends React.Component{
                         </h1>
 
                         <table>
-                            <tr>
-                                <th><h2>Modele</h2></th>
-                                <th><h2>Marque</h2></th>
-                                <th><h2>Prix</h2></th>
-                            </tr>
-                            {this.listeEvenements.map((valeurListe) =>{
-                                return(
-                                    <tr>
-                                        <LigneTableau model={this.state.modele} valeur={valeurListe}></LigneTableau>
-                                    </tr>
-                                );
-                            })}
+                            <tbody>
+                                <tr>
+                                    <th><h2>Modele</h2></th>
+                                    <th><h2>Marque</h2></th>
+                                    <th><h2>Prix</h2></th>
+                                </tr>
+                                {this.listeEvenements.map((valeurListe) =>{
+                                    return(
+                                        <React.Fragment key={valeurListe.marque}>
+                                            <tr>
+                                                <LigneTableau model={this.state.modele} valeur={valeurListe}></LigneTableau>
+                                            </tr>
+                                        </React.Fragment>
+                                    );
+                                })}
+                            </tbody>
                         </table>
                     </Col>
                 </Row>
