@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class LigneCrypto extends React.Component{
 
@@ -26,6 +27,15 @@ class LigneCrypto extends React.Component{
         )
     }
 
+}
+
+LigneCrypto.propTypes = {
+    nom: PropTypes.string.isRequired,
+    prix: PropTypes.number.isRequired,
+    quantite: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
+    total: PropTypes.number,
+    fonctionModif: PropTypes.func
 }
 
 export default LigneCrypto;

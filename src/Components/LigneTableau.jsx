@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class LigneTableau extends React.Component{
 
@@ -20,6 +21,14 @@ class LigneTableau extends React.Component{
             </>
         );
     }
+}
+
+LigneTableau.propTypes = {
+    valeur: PropTypes.exact({
+        prix: PropTypes.number,
+        marque: PropTypes.string,
+    }).isRequired,
+    model: PropTypes.string.isRequired,
 }
 
 export default LigneTableau;

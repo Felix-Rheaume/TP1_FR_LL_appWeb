@@ -5,6 +5,7 @@ import imageCss from "../Images/Css.png";
 import imageRien from "../Images/Rien.png";
 import imageNode from "../Images/Node.png";
 import imageJS from "../Images/Javascript.png";
+import PropTypes from 'prop-types';
 
 const altText = "Une belle image"
 
@@ -32,6 +33,10 @@ function CarouselImage(props) {
     }
 
     return <img className="carouselImages" src={imageSrc} alt={altText}  />
+}
+
+CarouselImage.propTypes = {
+    imageIndex: PropTypes.number.isRequired
 }
 
 export default CarouselImage;

@@ -23,21 +23,21 @@ class Convertisseur extends React.Component{
             case "cm":
                 this.setState({
                     distCm: distanceActuelle,
-                    distM: distanceActuelle*10,
-                    distKm: distanceActuelle*100
+                    distM: distanceActuelle/100,
+                    distKm: distanceActuelle/100000
                 });
                 break;
             case "m":
                 this.setState({
-                    distCm: distanceActuelle/10,
+                    distCm: distanceActuelle*100,
                     distM: distanceActuelle,
-                    distKm: distanceActuelle*10
+                    distKm: distanceActuelle/100
                 });
                 break;
             case "km":
                 this.setState({
-                    distCm: distanceActuelle/100,
-                    distM: distanceActuelle/10,
+                    distCm: distanceActuelle*100000,
+                    distM: distanceActuelle*100,
                     distKm: distanceActuelle
                 });
                 break;

@@ -1,3 +1,4 @@
+import { func, number } from "prop-types";
 import React from "react";
 
 class LigneModifCrypto extends React.Component{
@@ -36,6 +37,13 @@ class LigneModifCrypto extends React.Component{
         )
     }
 
+}
+
+LigneModifCrypto.propTypes = {
+    montant: number.isRequired,
+    quantite: number.isRequired,
+    id: number.isRequired,
+    enregistrer: func
 }
 
 export default LigneModifCrypto;

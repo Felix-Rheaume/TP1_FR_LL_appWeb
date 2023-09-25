@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class InputConvertisseur extends React.Component{
 
@@ -15,6 +16,12 @@ class InputConvertisseur extends React.Component{
             </div>
         )
     }
+}
+
+InputConvertisseur.propTypes = {
+    onDistanceChange:  PropTypes.func,
+    echelle: PropTypes.string.isRequired,
+    distance: PropTypes.number
 }
 
 export default InputConvertisseur;
