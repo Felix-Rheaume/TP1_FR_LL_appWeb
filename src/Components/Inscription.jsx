@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import ContainerBase from "./ConteneurBase";
 import AlerteFormulaire from "./AlerteFormulaire";
+import axios from "axios";
+
+const serviceURL = "https://tp2weblawrence.azurewebsites.net"
 
 function Inscription() {
     const [prenom, setPrenom] = useState('');
@@ -71,8 +74,18 @@ function Inscription() {
         }
     }
 
-    const enregistrerUtilisateurBD = (prenom, nom, nomUtilisateur, mdp)=>{
-        //TODO
+    const enregistrerUtilisateurBD = (prenom, nom, nomUtilisateur, mdp) => {
+        //TODO: ajuster l'appel avec le service REST
+        const utilisateurData = {
+            prenom: prenom,
+            nom: nom,
+            userName: nomUtilisateur,
+            password: mdp
+        }
+        /*axios.post(serviceURL + '/ajouterUser', utilisateurData)
+            .catch(err => {
+                setErreurs([`${err.message}`]);
+            });*/
     }
 
     return (

@@ -6,7 +6,7 @@ import Alert from 'react-bootstrap/Alert';
  */
 function AlerteFormulaire(props) {
     const erreurs = props.erreurs ? props.erreurs.filter(err => err !== null) : null;
-    const succes = props.succes;
+    const succes = erreurs === null ? props.succes : null;
 
     let returnValue = null;
 
