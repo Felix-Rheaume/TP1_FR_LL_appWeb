@@ -9,6 +9,7 @@ import Convertisseur from './Components/Convertisseur';
 import Crypto from './Components/Crypto';
 import Fibonnaci from './Components/Fibonnaci';
 import FibonnaciWebWorker from './Components/FibonnaciWebWorker';
+import Inscription from './Components/Inscription';
 
 // Le site web : https://tp1-fr-ll-app-web.vercel.app/
 
@@ -18,6 +19,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<Accueil/>}></Route>
+        <Route exact path="/inscription" element={<Inscription/>}></Route>
         <Route exact path="/carousel" element={<Carousel/>}></Route>
         <Route exact path="/tableau" element={<Tableau/>}></Route>
         <Route exact path="/calendrier" element={<Calendrier/>}></Route>
